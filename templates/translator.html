@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="container">
+    <form action="{% url 'get_translator' %}" method="post">
+        <div class="row">
+            <div class="col-sm-6 mt-3 left">
+                <textarea name="my_text" class="form-control" rows="10"></textarea>
+            </div>
+            <div class="col-sm-6 mt-3 left">
+                <textarea class="form-control" rows="10"></textarea>
+                <input class="btn btn-primary ml-3 mt-3" type="submit" value="Submit">
+            </div>
+        </div>
+    </form>
+</div>
+
+{% endblock content %}
